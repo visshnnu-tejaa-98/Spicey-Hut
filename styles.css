@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+/////////////////////////////
+nav bar
+/////////////////////////////
+*/
+
+.brand{
+    font-size: 2rem;
+    font-weight: bolder ;
+}
+.links{
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: auto 50%;
+    letter-spacing: 2px;
+}
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+/*
+/////////////////////////////
+bannar
+/////////////////////////////
+*/
+
+.bannar{
+    background-image: url("./images/pexels-ella-olsson-1640777.jpg");
+    width: 100vw;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute
+}
+.bannar-overlay{
+    width: 100vw;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.500);
+    position: absolute;
+}
+
+.center {
+    margin-top: 150px;
+    line-height: 1.5;
+    text-align: center;
+}
+.center h2{
+    font-size: 3.2rem;
+    color: rgb(240, 218, 218);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: 'Lobster', cursive;
+}
+.center p{
+    font-size: 2rem;
+    color:rgb(240, 218, 218);
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-family: 'Lobster', cursive;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.input{
+    width: 300px;
+    height: 40px;
+    border-radius: 3px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    text-align: center;
+}
+#button{
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/*
+/////////////////////////////
+section
+/////////////////////////////
+*/
+section{
+    margin-top: 90vh;
+}
+.header{
+    font-size: 2.5rem;
+    color: red;
+    text-align: center;
+    padding: 3%;
+    font-weight: bolder;
+}
+
+/*
+/////////////////////////////
+footer
+/////////////////////////////
+*/
+footer{
+    background: rgb(49, 49, 49);
+    color: white;
+    padding: 5%;
+    text-align: center;
+}
+footer a{
+    padding: 5px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+footer a:hover{
+    color: red;
+}
+
+/*
+/////////////////////////////
+recipe-body
+/////////////////////////////
+*/
+
+.recipe-body{
+    background-color: rgb(241, 241, 241);
+}
+/*
+/////////////////////////////
+card
+/////////////////////////////
+*/
+ul{
+    list-style-type: none;
+}
+
+.card-img{
+    border-top-left-radius: 30%;
+}
+.card-styling{
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 30%;
+}
+.card-heading-info a{
+    color: red;
+    font-size: 1.75rem;
+}
+/*
+/////////////////////////////
+card
+/////////////////////////////
+*/
+.modal-body h5{
+    font-size: 1.1em;
+    font-weight: bold;
+
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    max-width: 15rem;
+    padding: 0;
+    margin: 15px;
+}
+.modal-body p{
+    margin-bottom: 0;
+}
