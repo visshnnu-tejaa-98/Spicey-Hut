@@ -177,3 +177,75 @@ card
 .modal-body p{
     margin-bottom: 0;
 }
+
+/*
+/////////////////////////////
+recipe bannar
+/////////////////////////////
+*/
+
+.recipe-bannar{
+    width: 100vw;
+    background-image: url("./images/reciepies.jpg");
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.recipe-bannar-overlay{
+    background-color: rgba(0, 0, 0, 0.500);
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+}
+.recipe-article{
+    margin-top: 40vh;
+}
+.align{
+    margin: 17vh;
+}
+.align button{
+    margin-left: 30px;
+}
+
+.link-margin{
+    margin-left: 55%;
+}
+.about-container p{
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: 17px;
+    text-align: justify;
+}
+.about-container{
+    margin-bottom: 5%;
+}
+.form-container{
+    width: 40%;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width:768px){
+    .form-container{
+        width: 60%;
+    }
+}
+@media screen and (max-width:1200px){
+    .form-container{
+        width: 50%;
+    }
+}
+@media screen and (max-width:998px){
+    .form-container{
+        width: 55%;
+    }
+}
+@media screen and (max-width:567px){
+    .form-container{
+        width: 70%;
+    }
+}
+.about-body, .contact-body{
+    background-color: rgb(241, 241, 241);
+}

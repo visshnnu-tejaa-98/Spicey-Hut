@@ -31,6 +31,12 @@
                     <li class="nav-item">
                     <a class="nav-link links text-danger" href="./recipe.html">Recipes</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link links text-danger" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link links text-danger" href="./contact.html">Contact</a>
+                    </li>
                     
                 </ul>
             </div>
@@ -38,8 +44,19 @@
         </nav>
         <!-- navbar end -->
 
+        <div>
+            <div class="recipe-bannar">
+            </div>
+            <div class="recipe-bannar-overlay ">
+                <div class="d-flex justify-content-center align">
+                    <input type="text" class="input " id="recipe-input" placeholder="Recipe Name">
+                    <button type="button" class="btn btn-danger" id="recipe-button">Search</button>
+                </div>
+                
+            </div>
+        </div>
         <!-- setion start -->
-        <article>
+        <article class="recipe-article">
             <div class="header">
                 <p><i class="fas fa-pepper-hot"></i> Recipes</p>
             </div>
@@ -48,266 +65,209 @@
         <!-- section end -->
 
         <!-- cards start -->
-        <div class="container mb-5">
-            <div class="row">
-                <div class="card card-styling col col-sm-12 col-lg-4" style="max-width: 18rem;">
-                    <img src="https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg" style="height: 15rem;" class="card-img-top card-img" alt="...">
-                    <div class="card-body ">
-                        <div class="card-heading-info d-flex justify-content-between">
-                            <h5 class="card-title">Pizza</h5>
-                            <a href="#"><i class="fas fa-info-circle" data-target="#exampleModal" data-toggle="modal"></i></a>
-                            <!-- Modal -->
-                            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Recipe Details</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        </div>
-                                        <div class="modal-body">
-                                        <h5>Health Labels:</h5>
-                                        <span class="health-labels">Peanut-Free</span>
-                                        <span class="health-labels">Tree-Nut-Free</span>
-                                        <h5>Vitamins:</h5>
-                                        <p class="vitamin-labels">Vitamin A : 635.3 micro grams</p>
-                                        <p class="vitamin-labels">Vitamin B6 : 6.88 mg</p>
-                                        <p class="vitamin-labels">Vitamin B12 : 3.34 micro grams</p>
-                                        <p class="vitamin-labels">Vitamin C : 103.72 mg</p>
-                                        <p class="vitamin-labels">Vitamin D : 2.15 micro grams</p>
-                                        <p class="vitamin-labels">Vitamin K : 353.33 micro grams</p>
-                                        <p class="vitamin-labels">Cholesterol : 815 mg</p>
-                                        <p class="vitamin-labels">Fat : 274.4 g</p>
-                                        <h5>Ingredient List:</h5>
-                                        <p>1/2 cup olive oil</p>
-                                        <p>5 cloves garlic, peeled</p>
-                                        <p>2 large russet potatoes, peeled and cut into chunks</p>
-                                        <p>1 3-4 pound chicken, cut into 8 pieces (or 3 pound chicken legs)</p>
-                                        <p>3/4 cup white wine</p>
-                                        <p>3/4 cup chicken stock</p>
-                                        <p>3 tablespoons chopped parsley</p>
-                                        <p>1 tablespoon dried oregano</p>
-                                        <p>Salt and pepper</p>
-                                        <p>1 cup frozen peas, thawed</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <div class="container mb-5"id="container">
+            <div class="row" id="row">
+                <div class="">
+                    <div class="card card-styling col col-sm-12 col-lg-4" style="max-width: 18rem;">
+                        <img src="https://www.edamam.com/web-img/65d/65deab20fd757a5065656a609781ae11" style="height: 15rem;" class="card-img-top card-img" alt="...">
+                        <div class="card-body ">
+                            <div class="card-heading-info d-flex justify-content-between">
+                                <h5 class="card-title">Pizza Margherita</h5>
+                                <a href="#"><i class="fas fa-info-circle" data-target="#exampleModal" data-toggle="modal"></i></a>
+                                <!-- Modal -->
+                                <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Recipe Details</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <h5>Health Labels:</h5>
+                                            <span class="health-labels">Sugar-Conscious</span>
+                                            <span class="health-labels">Vegitarian</span>
+                                            <span class="health-labels">Peanut-Free</span>
+                                            <span class="health-labels">Tree-nut-Free</span>
+                                            <span class="health-labels">Alcohol-Free</span>
+                                            <h5>Vitamins:</h5>
+                                            <p>Vitamin A : 300.36µg, Vitamin B6 : 0.43mg, Vitamin B12 : 1.06µg, Vitamin C : 15.68mg, Vitamin D : 0.71µg, Vitamin K : 40.81µg, Cholesterol : 126.16mg, Fat : 48.33g</p>
+                                            <h5>Ingredient List:</h5>
+                                            <p>1/2 (24-ounce) package frozen prebaked gluten-free pizza crusts, thawed, 1/2 cup Basic Pizza Sauce or bottled gluten-free pizza sauce, 5 ounces fresh mozzarella cheese, thinly sliced, 1/3 cup torn fresh basil leaves</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <ul>
+                                <li>Calories : 2237 cal</li>
+                            </ul>
+                            <a href="https://www.myrecipes.com/recipe/pizza-margherita" class="btn btn-outline-danger">See Recipie Process</a>
                         </div>
-                        <ul>
-                            <li>Calories : 2675g</li>
-                        </ul>
-                        <a href="#" class="btn btn-outline-danger">See Recipie Process</a>
                     </div>
                 </div>
 
-                <div class="card card-styling col col-sm-12 col-lg-4" style="max-width: 18rem;">
-                    <img src="https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg" style="height: 15rem;" class="card-img-top card-img" alt="...">
-                    <div class="card-body ">
-                        <div class="card-heading-info d-flex justify-content-between">
-                            <h5 class="card-title">Pizza</h5>
-                            <a href="#"><i class="fas fa-info-circle" data-target="#exampleModal" data-toggle="modal"></i></a>
-                            <!-- Modal -->
-                            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Recipe Details</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        </div>
-                                        <div class="modal-body">
-                                        <h5>Health Labels:</h5>
-                                        <span class="health-labels">Peanut-Free</span>
-                                        <span class="health-labels">Tree-Nut-Free</span>
-                                        <h5>Vitamins:</h5>
-                                        <p class="vitamin-labels">Vitamin A : 635.3 micro grams</p>
-                                        <p class="vitamin-labels">Vitamin B6 : 6.88 mg</p>
-                                        <p class="vitamin-labels">Vitamin B12 : 3.34 micro grams</p>
-                                        <p class="vitamin-labels">Vitamin C : 103.72 mg</p>
-                                        <p class="vitamin-labels">Vitamin D : 2.15 micro grams</p>
-                                        <p class="vitamin-labels">Vitamin K : 353.33 micro grams</p>
-                                        <p class="vitamin-labels">Cholesterol : 815 mg</p>
-                                        <p class="vitamin-labels">Fat : 274.4 g</p>
-                                        <h5>Ingredient List:</h5>
-                                        <p>1/2 cup olive oil</p>
-                                        <p>5 cloves garlic, peeled</p>
-                                        <p>2 large russet potatoes, peeled and cut into chunks</p>
-                                        <p>1 3-4 pound chicken, cut into 8 pieces (or 3 pound chicken legs)</p>
-                                        <p>3/4 cup white wine</p>
-                                        <p>3/4 cup chicken stock</p>
-                                        <p>3 tablespoons chopped parsley</p>
-                                        <p>1 tablespoon dried oregano</p>
-                                        <p>Salt and pepper</p>
-                                        <p>1 cup frozen peas, thawed</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class="">
+                    <div class="card card-styling col col-sm-12 col-lg-4" style="max-width: 18rem;">
+                        <img src="https://www.edamam.com/web-img/05f/05f6b1fbd22e92e2f7ba32026abe1714.jpg" style="height: 15rem;" class="card-img-top card-img" alt="...">
+                        <div class="card-body ">
+                            <div class="card-heading-info d-flex justify-content-between">
+                                <h5 class="card-title">The Ultimate Burger</h5>
+                                <a href="#"><i class="fas fa-info-circle" data-target="#exampleModal" data-toggle="modal"></i></a>
+                                <!-- Modal -->
+                                <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Recipe Details</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <h5>Health Labels:</h5>
+                                            <p>Peanut-Free, Tree-Nut-Free, Alcohol-Free</p>
+                                            <h5>Vitamins:</h5>
+                                            <p>2 1/2 pounds skirt steak or sirloin flap steak, Accompaniments: homemade burger buns ; homemade ketchup ; homemade mustard ; homemade pickle relish ; lettuce and tomato</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <ul>
+                                <li>Calories : 2211.3 cal</li>
+                            </ul>
+                            <a href="https://www.epicurious.com/recipes/food/views/the-ultimate-burger-353654" class="btn btn-outline-danger">See Recipie Process</a>
                         </div>
-                        <ul>
-                            <li>Calories : 2675g</li>
-                        </ul>
-                        <a href="#" class="btn btn-outline-danger">See Recipie Process</a>
                     </div>
                 </div>
 
-                <div class="card card-styling col col-sm-12 col-lg-4" style="max-width: 18rem;">
-                    <img src="https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg" style="height: 15rem;" class="card-img-top card-img" alt="...">
-                    <div class="card-body ">
-                        <div class="card-heading-info d-flex justify-content-between">
-                            <h5 class="card-title">Pizza</h5>
-                            <a href="#"><i class="fas fa-info-circle" data-target="#exampleModal" data-toggle="modal"></i></a>
-                            <!-- Modal -->
-                            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Recipe Details</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        </div>
-                                        <div class="modal-body">
-                                        <h5>Health Labels:</h5>
-                                        <span class="health-labels">Peanut-Free</span>
-                                        <span class="health-labels">Tree-Nut-Free</span>
-                                        <h5>Vitamins:</h5>
-                                        <p class="vitamin-labels">Vitamin A : 635.3 micro grams</p>
-                                        <p class="vitamin-labels">Vitamin B6 : 6.88 mg</p>
-                                        <p class="vitamin-labels">Vitamin B12 : 3.34 micro grams</p>
-                                        <p class="vitamin-labels">Vitamin C : 103.72 mg</p>
-                                        <p class="vitamin-labels">Vitamin D : 2.15 micro grams</p>
-                                        <p class="vitamin-labels">Vitamin K : 353.33 micro grams</p>
-                                        <p class="vitamin-labels">Cholesterol : 815 mg</p>
-                                        <p class="vitamin-labels">Fat : 274.4 g</p>
-                                        <h5>Ingredient List:</h5>
-                                        <p>1/2 cup olive oil</p>
-                                        <p>5 cloves garlic, peeled</p>
-                                        <p>2 large russet potatoes, peeled and cut into chunks</p>
-                                        <p>1 3-4 pound chicken, cut into 8 pieces (or 3 pound chicken legs)</p>
-                                        <p>3/4 cup white wine</p>
-                                        <p>3/4 cup chicken stock</p>
-                                        <p>3 tablespoons chopped parsley</p>
-                                        <p>1 tablespoon dried oregano</p>
-                                        <p>Salt and pepper</p>
-                                        <p>1 cup frozen peas, thawed</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class="">
+                    <div class="card card-styling col col-sm-12 col-lg-4" style="max-width: 18rem;">
+                        <img src="https://www.edamam.com/web-img/e8f/e8ffd560a6b0d8c2041194c726cc428f.jpg" style="height: 15rem;" class="card-img-top card-img" alt="...">
+                        <div class="card-body ">
+                            <div class="card-heading-info d-flex justify-content-between">
+                                <h5 class="card-title">Rava Dosa- Semolina crepes</h5>
+                                <a href="#"><i class="fas fa-info-circle" data-target="#exampleModal" data-toggle="modal"></i></a>
+                                <!-- Modal -->
+                                <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Recipe Details</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <h5>Health Labels:</h5>
+                                            <p>Sugar-Conscious, Vegetarian, Peanut-Free, Tree-Nut-Free, Alcohol-Free</p>
+                                            <h5>Vitamins:</h5>
+                                            <p>Vitamin A : 70.90µg, Vitamin B6 : 1.51mg, Vitamin B12 : 0.11µg, Vitamin C : 230.05mg, Vitamin D : 0.03µg, Vitamin K : 40.61µg, Cholesterol : 4.46mg, Fat : 37.25g</p>
+                                            <h5>Ingredient List:</h5>
+                                            <p>2cups fine semolina, to taste Salt, 2tbsp Sour curds, 5-6 cups approximately Water to make the batter, 1tsp Cumin seeds, 2tbsp Finely chopped Coriander leaves, 1 cup Rice flour, 1/2 cup all purpose flour, 1large Onion, chopped fine, 2 Green chilies, finely chopped, as required Oil to shallow fry</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <ul>
+                                <li>Calories : 2394.1 cal</li>
+                            </ul>
+                            <a href="http://www.thedailymeal.com/recipes/rava-dosa-semolina-crepes-recipe" class="btn btn-outline-danger">See Recipie Process</a>
                         </div>
-                        <ul>
-                            <li>Calories : 2675g</li>
-                        </ul>
-                        <a href="#" class="btn btn-outline-danger">See Recipie Process</a>
-                    </div>
-                </div>
-                <div class="card card-styling col col-sm-12 col-lg-4" style="max-width: 18rem;">
-                    <img src="https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg" style="height: 15rem;" class="card-img-top card-img" alt="...">
-                    <div class="card-body ">
-                        <div class="card-heading-info d-flex justify-content-between">
-                            <h5 class="card-title">Pizza</h5>
-                            <a href="#"><i class="fas fa-info-circle" data-target="#exampleModal" data-toggle="modal"></i></a>
-                            <!-- Modal -->
-                            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Recipe Details</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        </div>
-                                        <div class="modal-body">
-                                        <h5>Health Labels:</h5>
-                                        <span class="health-labels">Peanut-Free</span>
-                                        <span class="health-labels">Tree-Nut-Free</span>
-                                        <h5>Vitamins:</h5>
-                                        <p class="vitamin-labels">Vitamin A : 635.3 micro grams</p>
-                                        <p class="vitamin-labels">Vitamin B6 : 6.88 mg</p>
-                                        <p class="vitamin-labels">Vitamin B12 : 3.34 micro grams</p>
-                                        <p class="vitamin-labels">Vitamin C : 103.72 mg</p>
-                                        <p class="vitamin-labels">Vitamin D : 2.15 micro grams</p>
-                                        <p class="vitamin-labels">Vitamin K : 353.33 micro grams</p>
-                                        <p class="vitamin-labels">Cholesterol : 815 mg</p>
-                                        <p class="vitamin-labels">Fat : 274.4 g</p>
-                                        <h5>Ingredient List:</h5>
-                                        <p>1/2 cup olive oil</p>
-                                        <p>5 cloves garlic, peeled</p>
-                                        <p>2 large russet potatoes, peeled and cut into chunks</p>
-                                        <p>1 3-4 pound chicken, cut into 8 pieces (or 3 pound chicken legs)</p>
-                                        <p>3/4 cup white wine</p>
-                                        <p>3/4 cup chicken stock</p>
-                                        <p>3 tablespoons chopped parsley</p>
-                                        <p>1 tablespoon dried oregano</p>
-                                        <p>Salt and pepper</p>
-                                        <p>1 cup frozen peas, thawed</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>Calories : 2675g</li>
-                        </ul>
-                        <a href="#" class="btn btn-outline-danger">See Recipie Process</a>
                     </div>
                 </div>
 
-                <div class="card card-styling col col-sm-12 col-lg-4" style="max-width: 18rem;">
-                    <img src="https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg" style="height: 15rem;" class="card-img-top card-img" alt="...">
-                    <div class="card-body ">
-                        <div class="card-heading-info d-flex justify-content-between">
-                            <h5 class="card-title">Pizza</h5>
-                            <a href="#"><i class="fas fa-info-circle" data-target="#exampleModal-1" data-toggle="modal"></i></a>
-                            <!-- Modal -->
-                            <div class="modal fade " id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Recipe Details</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        </div>
-                                        <div class="modal-body">
-                                        <h5>Health Labels:</h5>
-                                        
-                                        <h5>Vitamins:</h5>
-                                        
-                                        <h5>Ingredient List:</h5>
-                                        
-                                        </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class="">
+                    <div class="card card-styling col col-sm-12 col-lg-4" style="max-width: 18rem;">
+                        <img src="https://www.edamam.com/web-img/f4d/f4dad71fec563dfba890813f81b33e10.jpg" style="height: 15rem;" class="card-img-top card-img" alt="...">
+                        <div class="card-body ">
+                            <div class="card-heading-info d-flex justify-content-between">
+                                <h5 class="card-title">Tomato Uthappam - Indian Style Omelette</h5>
+                                <a href="#"><i class="fas fa-info-circle" data-target="#exampleModal" data-toggle="modal"></i></a>
+                                <!-- Modal -->
+                                <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Recipe Details</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <h5>Health Labels:</h5>
+                                            <p>Sugar-Conscious, Vegan, Vegetarian, Peanut-Free, Tree-Nut-Free, Alcohol-Free</p>
+                                            <h5>Vitamins:</h5>
+                                            <p>Vitamin A : 53.51µg, Vitamin B6 : 0.11mg, Vitamin B12 : 0.00µg, Vitamin C : 17.13mg, Vitamin D : 0.00µg, Vitamin K : 14.34µg, Cholesterol : 0.00mg, Fat : 35.55g</p>
+                                            <h5>Ingredient List:</h5>
+                                            <p>2 cups of idli batter, preferably 2-3 days old, 1 tomato, A few curry leaves, 2-3 tbsp of gingelly oil, indian sesame oil, i use idhayam</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <ul>
+                                <li>Calories : 1463.6 cal</li>
+                            </ul>
+                            <a href="https://honestcooking.com/indian-style-omelette-recipe/" class="btn btn-outline-danger">See Recipie Process</a>
                         </div>
-                        <ul>
-                            <li>Calories : 2675g</li>
-                        </ul>
-                        <a href="#" class="btn btn-outline-danger">See Recipie Process</a>
                     </div>
                 </div>
-                
 
+                <div class="">
+                    <div class="card card-styling col col-sm-12 col-lg-4" style="max-width: 18rem;">
+                        <img src="https://www.edamam.com/web-img/f60/f60a5c7e9554d399acf646e22681dfbd.jpg" style="height: 15rem;" class="card-img-top card-img" alt="...">
+                        <div class="card-body ">
+                            <div class="card-heading-info d-flex justify-content-between">
+                                <h5 class="card-title">Pizza Roll-Up</h5>
+                                <a href="#"><i class="fas fa-info-circle" data-target="#exampleModal-1" data-toggle="modal"></i></a>
+                                <!-- Modal -->
+                                <div class="modal fade " id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Recipe Details</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <h5>Health Labels:</h5>
+                                            <p>Sugar-Conscious, Vegetarian, Peanut-Free, Tree-Nut-Free, Alcohol-Free</p>
+                                            <h5>Vitamins:</h5>
+                                            <p>Vitamin A : 225.19µg, Vitamin B6 : 0.14mg, Vitamin B12 : 0.49µg, Vitamin C : 14.80mg, Vitamin D : 0.08µg, Vitamin K : 195.70µg, Cholesterol : 16.59mg, Fat : 8.93g</p>
+                                            <h5>Ingredient List:</h5>
+                                            <p>2 tablespoons prepared pizza sauce, 1 8-inch whole-wheat flour tortilla, 12 leaves baby spinach, 3 tablespoons shredded part-skim mozzarella</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>Calories : 234.7 cal</li>
+                            </ul>
+                            <a href="http://www.eatingwell.com/recipe/249873/pizza-roll-up/" class="btn btn-outline-danger">See Recipie Process</a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
