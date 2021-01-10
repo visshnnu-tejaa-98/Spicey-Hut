@@ -68,6 +68,7 @@ button.addEventListener("click",function(){
 
         row.appendChild(div)
         }
+        input.value = ""
     })
     
 })
