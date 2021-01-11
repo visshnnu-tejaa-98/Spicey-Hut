@@ -50,24 +50,23 @@
             <!-- cards come here -->
         </article>
         <div class="container about-container">
-            <p class="mb-5">Lorem ipsum dolor sit amet consectetur corrupti deserunt. Nemo voluptates cupiditate minima velit maxime atque natus inventore et, animi similique, id voluptatibus doloribus, eaque assumenda quia sapiente voluptatem veniam deserunt eligendi! Dicta aliquam ab distinctio. Pariatur error eius quisquam minima quia facilis eligendi, dolor laborum.</p>
+            <h4 class="mb-5 display-5 d-flex justify-content-center"> To Know Other Details, You can Contact me <span class="text-danger pl-2 "> Here.</span></h4>
         </div>
         <div class="container form-container">
             
             <div class="">
-                <form>
+                <form action="https://formspree.io/f/xrgoryak" method="POST">
 
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Name">
-                    </div><br>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email">
-                    </div><br>
-                    <div class="form-group">
-                      <textarea name="" id="" cols="" rows="3"  class="form-control" placeholder="Message"></textarea>
+                      <input type="text" name="name" class="form-control" placeholder="Name">
                     </div>
-                    
-                    <button type="submit" class="btn btn-outline-danger">Submit</button>
+                    <div class="form-group">
+                        <input type="email" name = "email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <textarea name="" id="" name="message" cols="" rows="3"  class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" name = "button" class="btn btn-outline-danger">Submit</button>
                   </form>
             </div>
         </div>
